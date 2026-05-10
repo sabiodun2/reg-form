@@ -1,0 +1,117 @@
+<html>
+	<head>
+		<title>Register Here</title>
+		<style>
+			body{
+				background-color: black;
+			}
+			label{
+				color: lightblue;
+			}
+			legend{
+				color: deepskyblue;
+				-webkit-text-stroke: 0.25px black;
+				font-weight: 900;
+			}
+			fieldset{
+				border: 2px solid black;
+			}
+			body{
+				text-align: center;
+				background-image: url(images/coolpattern.jpg);
+			}
+			.intro{
+				color: rgb(114, 114, 114);
+				text-shadow: 0px 1px 1px white;
+			}
+			.A{
+				border-color: white;
+			}
+		</style>
+	</head>
+	<body>
+		<p>
+		<!--introduction-->
+		<h1 class="intro"><b>Registration Form</b></h1>
+		</p>
+		<h3 class="intro">Enter all information accurately</h3>
+		<!--end of introduction-->
+		<form>
+			<!--personal information-->
+			<fieldset id="User" class="A">
+				<legend>Name, E-mail and Password</legend>
+				<label>Full Name:<br/>
+				<input type="text" name="username" maxlength="30"/>
+				<label><br/>
+				<br/>
+				<label>E-mail:<br/>
+				<input type="text" name="email" placeholder="Enter a valid e-mail"; required/>
+				</label><br/>
+				<br/>
+				<label>Password<br/>
+				<input type="password" name="password" size="18" maxlength="8" placeholder="8-characters"/>
+				</label><br/>
+			</fieldset>
+			<!--address-->
+			<fieldset id="Address" class="A">
+				<legend>Address</legend>
+				<label>Address:</p>
+				<textarea name="address" cols="20" rows="2"></textarea>
+				</label><br/>
+				<br/>
+				<label>City:<br/>
+				<input type="text" name="city"/>
+				<label><br/>
+				<br/>
+				<label>Country:<br/>
+				<input type="text" name="country"/>
+				<label><br/>
+			</fieldset>
+			<!--end of address-->
+			<!--age and gender-->	
+			<fieldset id="Gender" class="A">
+				<legend>Date of Birth and Gender</legend>
+				<label>Date of Birth:<br/>
+				<input type="date" name="age"/>
+				<label><br/>
+				<br/>
+				<label>Select a gender:<br/>
+				<input type="radio" name="gender" value="male"/>Male
+				<br/>
+				<input type="radio" name="gender" value="female"/>Female
+				</label>
+			</fieldset>
+			<!--end of age and gender-->
+			<!--end of personal information-->
+			<!--other information-->
+			<fieldset id="Other" class="A">
+				<legend>Other Information</legend>
+				<label>Select your hobbies:<br/>
+				<input type="checkbox" name="hobby" value="drawing"/>Drawing
+				<br/>
+				<input type="checkbox" name="hobby" value="football"/>Football
+				<br/>
+				<input type="checkbox" name="hobby" value="painting"/>Painting
+				</label><br/>
+				<br/>
+				<label>Write down other hobbies below:<br/>
+				<textarea name="hobby" cols="20" rows="4"></textarea>
+				</label><br/>
+				<br/>
+			</fieldset>
+			<!--end of other information-->
+			<!--final uploads-->
+			<fieldset class="A">
+				<legend>Finish</legend>
+				<label>Upload your picture here:<br/>
+				<br/>
+				<input type="file" name="user-picture"/><br/>
+				<br/>
+				<button>Add</button>
+				<input type="hidden" name="bookmark" value="lyrics"/>
+				<br/>
+				<input type="submit" value="Submit"/>
+			</fieldset>
+			<!--finish registration-->
+	</body>
+</html>
